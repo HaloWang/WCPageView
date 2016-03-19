@@ -37,7 +37,7 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 
 @interface WCPageView : UIView
 
-#pragma mark - Init Method & Required Properties
+#pragma mark - Constructor & Required Properties
 
 + (nonnull WCPageView *)pageViewWithFrame:(CGRect)frame dataSource:(nonnull id<WCPageViewDataSource>)dataSource;
 
