@@ -1,0 +1,10 @@
+PODS:
+  - HaloObjC (0.0.6)
+
+DEPENDENCIES:
+  - HaloObjC
+
+SPEC CHECKSUMS:
+  HaloObjC: 8ec1a9b77cb7fc7b80ea507d90c5c9126bfe72bd
+
+COCOAPODS: 0.39.0
