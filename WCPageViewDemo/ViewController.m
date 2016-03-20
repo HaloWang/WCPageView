@@ -19,19 +19,19 @@
 @implementation ViewController
 
 - (void)initData {
-    self.dataArray = @[@"A",@"B",@"C",@"D"];
+    self.dataArray = @[@"A", @"B", @"C", @"D"];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [HaloObjC server];
-    
+
     [self initData];
-    
+
     WCPageView *pageView = [WCPageView pageViewWithFrame:CGRectMake(0, 200, ScreenWidth, 200) dataSource:self];
     pageView.infinite = NO;
     pageView.collectionView.delegate = self;
-    
+
     [self.view addSubview:pageView];
 }
 
@@ -44,7 +44,7 @@
 }
 
 - (void)pageView:(WCPageView *)pageView configCell:(UICollectionViewCell *)cell atIndex:(NSInteger)index {
-    cell.backgroundColor = [UIColor colorWithRed:1  green: ((CGFloat)index / self.dataArray.count) blue: ((CGFloat)index / self.dataArray.count) alpha:1];
+    cell.backgroundColor = [UIColor colorWithRed:1 green:((CGFloat) index / self.dataArray.count) blue:((CGFloat) index / self.dataArray.count) alpha:1];
 }
 
 - (Class)collectionViewCellClassOfPageView:(WCPageView *)pageView {
