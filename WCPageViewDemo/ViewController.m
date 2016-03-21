@@ -44,7 +44,10 @@
 }
 
 - (void)pageView:(WCPageView *)pageView configCell:(UICollectionViewCell *)cell atIndex:(NSInteger)index {
-    cell.backgroundColor = [UIColor colorWithRed:1 green:((CGFloat) index / self.dataArray.count) blue:((CGFloat) index / self.dataArray.count) alpha:1];
+    cell.backgroundColor = [UIColor colorWithRed:0.5
+                                           green:((CGFloat) index / self.dataArray.count)
+                                            blue:((CGFloat) index / self.dataArray.count)
+                                           alpha:1];
 }
 
 - (Class)collectionViewCellClassOfPageView:(WCPageView *)pageView {
