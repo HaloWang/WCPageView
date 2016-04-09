@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "WCPageView.h"
+#import <WCPageView/WCPageView.h>
 #import <HaloObjC/HaloObjC.h>
 
 @interface ViewController () <WCPageViewDataSource, UICollectionViewDelegate>
@@ -24,14 +24,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [HaloObjC server];
-
+    
     [self initData];
-
+    
     WCPageView *pageView = [WCPageView pageViewWithFrame:CGRectMake(0, 200, ScreenWidth, 200) dataSource:self];
     pageView.infinite = NO;
     pageView.collectionView.delegate = self;
-
+    
     [self.view addSubview:pageView];
 }
 

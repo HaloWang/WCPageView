@@ -42,10 +42,21 @@ extern float SystemVersionNumber;
 
 /**
  *  测量某段代码的执行时间
+ *  你不用考虑 block 执行的线程
  *
  *  @param ^CodeWaitingForMeasure 你想测量的代码
  */
-void measure(void(^CodeWaitingForMeasure)(void));
+void Measure(void(^CodeWaitingForMeasure)());
+
+#pragma mark - GCD
+
+void Async(void(^noUITask)());
+
+void AsyncFinish(void(^noUITask)(), void(^UITask)());
+
+void Last(void(^UITask)());
+
+void After(float second, void(^UITask)());
 
 #pragma mark - Log
 
@@ -83,8 +94,9 @@ void ccWarning(id obj);
 
 /**
  *  开始服务
+ *  已经不用主动调用该方法了
  */
-+ (void)server;
++ (void)server DEPRECATED_ATTRIBUTE;
 
 /**
  *  是否开启 Log（也就是 ccLog），默认值是 YES
@@ -94,6 +106,12 @@ void ccWarning(id obj);
 @end
 
 #pragma mark - UIView
+
+/// 相当于 CGRectMake
+CGRect RM(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
+
+/// 创建一个水平居中（相对于屏幕）的 CGRect 值
+CGRect CM(CGFloat y, CGFloat width, CGFloat height);
 
 @interface UIView (Halo)
 
@@ -115,6 +133,51 @@ void ccWarning(id obj);
 
 @end
 
+#pragma mark - UIScrollView
+
+@interface UIScrollView (Halo)
+
+@property (nonatomic, assign) CGFloat hl_insetTop;
+@property (nonatomic, assign) CGFloat hl_insetBottom;
+
+@property (nonatomic, assign) CGFloat hl_offsetX;
+@property (nonatomic, assign) CGFloat hl_offsetY;
+
+@end
+
+#pragma mark - UITableView
+
+@interface UITableView (Halo)
+
+/**
+ *  默认使用 class 名作为 reuseIdentifier
+ *
+ *  @param cellClass 要注册的 Cell 类型
+ */
+- (void)hl_registerCellClass:(Class)cellClass;
+
+@end
+
+#pragma mark - UITableViewCell
+
+@interface UITableViewCell (Halo)
+
++ (NSString *)hl_reuseIdentifier;
+
+@end
+
+@interface UITableViewValue1Cell : UITableViewCell
+
+@end
+
+#pragma mark - UICollectionViewCell
+
+@interface UICollectionViewCell (Halo)
+
++ (NSString *)hl_reuseIdentifier;
+
+@end
+
 #pragma mark - UIColor
 
 UIColor *ColorWithRGB(CGFloat r, CGFloat g, CGFloat b);
@@ -126,5 +189,17 @@ UIColor *ColorWithRGBA(CGFloat r, CGFloat g, CGFloat b, CGFloat a);
 UIColor *ColorWithHexValue(NSUInteger hexValue);
 UIColor *ColorWithHexValueA(NSUInteger hexValue, CGFloat a);
 
+/**
+ *  use hexValue like @"FFFFFF" (or @"#FFFFFF") to create a UIColor object
+ */
+UIColor *HEX(NSString *hexString);
+
+UIColor *RGB(CGFloat r, CGFloat g, CGFloat b);
+
+/**
+ *  带有 alpha 的 RGB
+ *  @param a 0~1.0
+ */
+UIColor *RGBA(CGFloat r, CGFloat g, CGFloat b, CGFloat a);
 
 

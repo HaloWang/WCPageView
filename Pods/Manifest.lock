@@ -1,10 +1,20 @@
 PODS:
-  - HaloObjC (0.0.6)
+  - FangYuanObjC (0.0.9)
+  - HaloObjC (0.2.1)
+  - WCPageView (0.0.1)
 
 DEPENDENCIES:
+  - FangYuanObjC
   - HaloObjC
+  - WCPageView (from `./WCPageView`)
+
+EXTERNAL SOURCES:
+  WCPageView:
+    :path: ./WCPageView
 
 SPEC CHECKSUMS:
-  HaloObjC: 8ec1a9b77cb7fc7b80ea507d90c5c9126bfe72bd
+  FangYuanObjC: c5c7efbd5b54d8aa8342e69801e41c09884054ca
+  HaloObjC: 3e9b6dc377f2c9ca3c9bd58cbd8f6b6d9b68d987
+  WCPageView: 28ac375cb9b4519ea98796171da43a160cab714b
 
 COCOAPODS: 0.39.0

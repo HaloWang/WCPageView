@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  WCPageViewDemo
 //
-//  Created by 王策 on 16/3/19.
+//  Created by 王策 on 16/4/10.
 //  Copyright © 2016年 王策. All rights reserved.
 //
 
@@ -13,6 +13,5 @@
 @property (strong, nonatomic) UIWindow *window;
 
 
-- (void)applicationDidEnterBackground:(UIApplication *)application;
 @end
 
