@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+// TODO: 添加 Assume Not Null
+
 #pragma mark - Enumerations
 
 /// 更换 currentPageIndex 的位置
@@ -43,6 +45,8 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 
 @property (nonatomic, weak) id<WCPageViewDataSource> dataSource;
 
+- (void)reloadData;
+
 #pragma mark - Page Settings
 
 /// 设定该 PageView 是否可无限滚动，默认值为 YES
@@ -68,16 +72,20 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 
 #pragma mark - Timer
 
-// TODO: ⚠️ Timer
-
 @property (nonatomic, assign, getter=isTimerEnable) BOOL timerEnable;
 
 @property (nonatomic, strong, nullable) NSTimer *timer;
 
+/// 自动滚动频率，默认为 5s
 @property (nonatomic, assign) NSTimeInterval frequency;
+
+/// 每次滚动动画持续时间，默认为 0.25s，未完成 ⚠️
 @property (nonatomic, assign) NSTimeInterval duration;
+
+
 @property (nonatomic, assign) NSTimeInterval firstFireDelay;
 
+/// 滚动是否有动画，默认为 YES
 @property (nonatomic, assign) BOOL animated;
 
 @end

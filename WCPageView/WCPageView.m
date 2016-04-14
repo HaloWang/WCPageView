@@ -1,6 +1,5 @@
 
 #import "WCPageView.h"
-#import <HaloObjC.h>
 
 NSInteger const InfiniteNumberOfItems = 1000;
 
@@ -61,15 +60,32 @@ NSInteger const InfiniteNumberOfItems = 1000;
     return [[WCPageView alloc] initWithFrame:frame dataSource:dataSource];
 }
 
+- (void)reloadData {
+    // TODO: 未完成
+    [self backToBeginPageIndex];
+}
+
+- (void)backToBeginPageIndex {
+    // TODO: 未完成
+}
+
 - (instancetype)initWithFrame:(CGRect)frame dataSource:(id<WCPageViewDataSource>)dataSource {
     self = [super initWithFrame:frame];
     if (self) {
         
-        _infinite = YES;
+        _animated  = YES;
+        _frequency = 5;
+        _duration  = 0.25;
+        
+        _timer = [NSTimer scheduledTimerWithTimeInterval:_frequency target:self selector:@selector(timePass) userInfo:nil repeats:YES];
+        // TODO: 作用？
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+        
+        _infinite                            = YES;
         _automaticallyPageControlCurrentPage = YES;
-        _dataSource = dataSource;
-        _pageIndexChangePosition = WCPageViewCurrentPageIndexChangePositionMiddle;
-        CGSize _frameSize = frame.size;
+        _dataSource                          = dataSource;
+        _pageIndexChangePosition             = WCPageViewCurrentPageIndexChangePositionMiddle;
+        CGSize _frameSize                    = frame.size;
         
         //  Set collectionViewLayout
         _layout                         = [UICollectionViewFlowLayout new];
@@ -147,5 +163,29 @@ NSInteger const InfiniteNumberOfItems = 1000;
     
     return cell;
 }
+
+#pragma mark - Timer
+
+- (void)timePass {
+    __weak typeof(self) weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(self.frequency * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [weakSelf showNextPage];
+    });
+}
+
+- (void)setTimerEnable:(BOOL)timerEnable {
+    if (timerEnable) {
+        [_timer fire];
+    } else {
+        [_timer invalidate];
+    }
+}
+
+- (void)showNextPage {
+    CGFloat _collectionViewWidth = _collectionView.frame.size.width;
+    CGPoint newOffset = CGPointMake(((NSInteger)(_collectionView.contentOffset.x / _collectionViewWidth)) * _collectionViewWidth + _collectionViewWidth, 0);
+    [_collectionView setContentOffset:newOffset animated:self.animated];
+}
+                  
 
 @end
