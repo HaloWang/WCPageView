@@ -28,6 +28,7 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 @protocol WCPageViewDataSource <NSObject>
 
 @required
+// TODO: 这个方法应该只走一次才好？但是 UITableViewDataSource
 - (void)pageView:(nonnull WCPageView *)pageView configCell:(nonnull UICollectionViewCell *)cell atIndex:(NSInteger)index;
 - (nonnull Class)collectionViewCellClassOfPageView:(nonnull WCPageView *)pageView;
 - (NSInteger)numberOfItemsInPageView:(nonnull WCPageView *)pageView;
@@ -37,6 +38,8 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 
 @end
 
+// TODO: 是不是应该提供一个 segment ？
+
 @interface WCPageView : UIView
 
 #pragma mark - Constructor & Required Properties
@@ -44,6 +47,8 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 + (nonnull WCPageView *)pageViewWithFrame:(CGRect)frame dataSource:(nonnull id<WCPageViewDataSource>)dataSource;
 
 @property (nonatomic, weak) id<WCPageViewDataSource> dataSource;
+
+- (void)setPageIndex:(NSInteger)index animated:(BOOL)animated;
 
 - (void)reloadData;
 

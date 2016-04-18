@@ -23,33 +23,6 @@ NSInteger const InfiniteNumberOfItems = 1000;
     return _collectionView.frame.size.width;
 }
 
-- (void)setCurrentPageIndex:(NSInteger)currentPageIndex {
-    
-}
-
-- (NSInteger)currentPageIndex {
-    
-    CGFloat adjustOffset = 0;
-    switch (self.pageIndexChangePosition) {
-        case WCPageViewCurrentPageIndexChangePositionHeader:
-            adjustOffset = 0;
-            break;
-            
-        case WCPageViewCurrentPageIndexChangePositionFooter:
-            adjustOffset = -[self collectionViewWidth] / 2;
-            break;
-            
-        case WCPageViewCurrentPageIndexChangePositionMiddle:
-            adjustOffset = [self collectionViewWidth] / 2;
-            break;
-            
-        default:
-            break;
-    }
-    
-    return (NSInteger)((_collectionView.contentOffset.x + adjustOffset)/ _collectionView.frame.size.width) % self.pageCount;
-}
-
 - (NSInteger)pageCount {
     return [self.dataSource numberOfItemsInPageView:self];
 }
@@ -60,9 +33,20 @@ NSInteger const InfiniteNumberOfItems = 1000;
     return [[WCPageView alloc] initWithFrame:frame dataSource:dataSource];
 }
 
+- (void)setPageIndex:(NSInteger)index animated:(BOOL)animated {
+    if (index == self.currentPageIndex) {
+        return;
+    }
+    CGPoint _point = self.collectionView.contentOffset;
+    _point.x += (index - self.currentPageIndex) * self.collectionView.frame.size.width;
+    [self.collectionView setContentOffset:_point animated:animated];
+}
+
 - (void)reloadData {
     // TODO: 未完成
     [self backToBeginPageIndex];
+    [self.collectionView reloadData];
+    _pageControl.numberOfPages = [self.dataSource numberOfItemsInPageView:self];
 }
 
 - (void)backToBeginPageIndex {
@@ -111,14 +95,16 @@ NSInteger const InfiniteNumberOfItems = 1000;
         [_pageControl addTarget:self action:@selector(pageControlValueChanged) forControlEvents:UIControlEventValueChanged];
         [self addSubview:_pageControl];
         
-        //  Observe contentSize to change pageControl value
-        [_collectionView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
+        //  Observer contentSize to change pageControl value
+        [_collectionView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+        [self addObserver:self forKeyPath:@"currentPageIndex" options:NSKeyValueObservingOptionNew context:nil];
     }
     return self;
 }
 
 - (void)dealloc {
-    [_collectionView removeObserver:self forKeyPath:@"contentSize"];
+    [_collectionView removeObserver:self forKeyPath:@"contentOffset"];
+    [self removeObserver:self forKeyPath:@"currentPageIndex"];
 }
 
 #pragma mark - Private Methods
@@ -130,8 +116,15 @@ NSInteger const InfiniteNumberOfItems = 1000;
 #pragma mark - KVO
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"contentSize"]) {
-        
+    
+    if ([keyPath isEqualToString:@"contentOffset"]) {
+        NSInteger _judgedPageIndex = [self judgePageIndex];
+        if (_judgedPageIndex != self.currentPageIndex) {
+            self.currentPageIndex = _judgedPageIndex;
+        }
+    }
+
+    if ([keyPath isEqualToString:@"currentPageIndex"]) {
         if (self.automaticallyPageControlCurrentPage) {
             self.pageControl.currentPage = self.currentPageIndex;
         }
@@ -142,9 +135,41 @@ NSInteger const InfiniteNumberOfItems = 1000;
     }
 }
 
+- (NSInteger)judgePageIndex {
+
+    if (self.pageCount == 0) {
+        return 0;
+    }
+
+    CGFloat adjustOffset = 0;
+    switch (self.pageIndexChangePosition) {
+        case WCPageViewCurrentPageIndexChangePositionHeader:
+            adjustOffset = 0;
+            break;
+            
+        case WCPageViewCurrentPageIndexChangePositionFooter:
+            adjustOffset = -[self collectionViewWidth] / 2;
+            break;
+            
+        case WCPageViewCurrentPageIndexChangePositionMiddle:
+            adjustOffset = [self collectionViewWidth] / 2;
+            break;
+            
+        default:
+            break;
+    }
+    
+    return (NSInteger)((_collectionView.contentOffset.x + adjustOffset)/ _collectionView.frame.size.width) % self.pageCount;
+}
+
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
+    if (self.pageCount == 0) {
+        return 0;
+    }
+    
     if ([self isInfinite]) {
         return InfiniteNumberOfItems;
     }
