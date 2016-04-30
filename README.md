@@ -1,5 +1,3 @@
 # WCPageView
 
-⚠️ Unfinish!
-
-A easy way to implementation infinite PageView
+A easy way to implementation PageView
