@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'WCPageView'
   s.version      = '0.0.1'
-  s.summary      = "Private"
+  s.summary      = "A easy way to implementation PageView"
   s.author       = { "王策" => "634692517@qq.com" }
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.homepage     = "https://github.com/HaloWang/WCPageView"
