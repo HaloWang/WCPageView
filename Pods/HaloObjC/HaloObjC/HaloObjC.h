@@ -38,6 +38,12 @@ extern NSString *AppBuildVersion;
 extern NSString *SystemVersion;
 extern float SystemVersionNumber;
 
+extern BOOL iPhone6P;
+extern BOOL iPhone6;
+extern BOOL iPhone5;
+extern BOOL iPhone4s;
+
+
 #pragma mark - Measure
 
 /**
@@ -50,12 +56,35 @@ void Measure(void(^CodeWaitingForMeasure)());
 
 #pragma mark - GCD
 
+/**
+ *  开辟新线程，异步执行
+ *
+ *  @param ^noUITask 一些要做，但是可以放到最后做的事情
+ */
 void Async(void(^noUITask)());
 
+/**
+ *  开启新线程，异步执行，完成后回到主线程执行
+ *
+ *  @param ^noUITask    顾名思义
+ *
+ *  @param ^UITask  顾名思义
+ */
 void AsyncFinish(void(^noUITask)(), void(^UITask)());
 
+/**
+ *  主线程异步执行
+ *
+ *  @param ^UITask 一些要做，而且需要在主线程做，但是可以放到最后做的事情
+ */
 void Last(void(^UITask)());
 
+/**
+ *  延迟执行
+ *
+ *  @param second  延迟多少秒
+ *  @param ^UITask 在主线程中做的事情
+ */
 void After(float second, void(^UITask)());
 
 #pragma mark - Log
@@ -93,15 +122,35 @@ void ccWarning(id obj);
 @interface HaloObjC : NSObject
 
 /**
- *  开始服务
- *  已经不用主动调用该方法了
- */
-+ (void)server DEPRECATED_ATTRIBUTE;
-
-/**
  *  是否开启 Log（也就是 ccLog），默认值是 YES
  */
 + (void)logEnable:(BOOL)enable;
+
+@end
+
+#pragma mark - NSString
+
+@interface NSString (Halo)
+
+@property (nonatomic, readonly) NSURL *URL;
+
+@end
+
+#pragma mark - UIFont
+
+UIFont *hl_systemFontOfSize(CGFloat size);
+
+#pragma mark - UIButton
+
+@interface UIButton (Halo)
+
+@property (nonatomic, strong) UIFont *hl_titleFont;
+@property (nonatomic, strong) UIColor *hl_normalTitleColor;
+@property (nonatomic, strong) NSString *normalTitle;
+
++ (UIButton *)custom;
+
+- (instancetype)addTouchUpInSideTarget:(id)target action:(SEL)action;
 
 @end
 
@@ -114,6 +163,8 @@ CGRect RM(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
 CGRect CM(CGFloat y, CGFloat width, CGFloat height);
 
 @interface UIView (Halo)
+
+- (instancetype)addToSuperview:(UIView *)superview;
 
 /**
  *  设定圆角半径
@@ -178,16 +229,16 @@ CGRect CM(CGFloat y, CGFloat width, CGFloat height);
 
 @end
 
+#pragma mark - UINavigatoinController
+
+@interface UINavigationController (Halo)
+
+/// 使用纯色填充 NavigationBar
+- (void)barUseColor:(UIColor *)color tintColor:(UIColor *)tintColor shadowColor:(UIColor *)shadowColor;
+
+@end
+
 #pragma mark - UIColor
-
-UIColor *ColorWithRGB(CGFloat r, CGFloat g, CGFloat b);
-UIColor *ColorWithRGBA(CGFloat r, CGFloat g, CGFloat b, CGFloat a);
-
-/**
- *  use hexValue like 0xFFFFFF to create a UIColor object
- */
-UIColor *ColorWithHexValue(NSUInteger hexValue);
-UIColor *ColorWithHexValueA(NSUInteger hexValue, CGFloat a);
 
 /**
  *  use hexValue like @"FFFFFF" (or @"#FFFFFF") to create a UIColor object

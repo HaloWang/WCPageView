@@ -37,6 +37,11 @@ NSString *AppBuildVersion;
 NSString *SystemVersion;
 float SystemVersionNumber;
 
+BOOL iPhone6P;
+BOOL iPhone6;
+BOOL iPhone5;
+BOOL iPhone4s;
+
 #pragma mark - Measure
 
 void Measure(void(^CodeWaitingForMeasure)()) {
@@ -50,17 +55,17 @@ void Measure(void(^CodeWaitingForMeasure)()) {
 
 #pragma mark - GCD
 
-dispatch_queue_t HaloObjC_Async_Queue() {
-    static dispatch_queue_t queue;
+dispatch_queue_t _halo_async_queue() {
+    static dispatch_queue_t _halo_async_queue_t;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        queue = dispatch_queue_create("HaloObjC_Async_Queue", NULL);
+        _halo_async_queue_t = dispatch_queue_create("HaloObjC_Async_Queue", NULL);
     });
-    return queue;
+    return _halo_async_queue_t;
 }
 
 void Async(void(^noUITask)()) {
-    dispatch_async(HaloObjC_Async_Queue(), ^{
+    dispatch_async(_halo_async_queue(), ^{
         if (noUITask) {
             noUITask();
         }
@@ -68,7 +73,7 @@ void Async(void(^noUITask)()) {
 }
 
 void AsyncFinish(void(^noUITask)(), void(^UITask)()) {
-    dispatch_async(HaloObjC_Async_Queue(), ^{
+    dispatch_async(_halo_async_queue(), ^{
         if (noUITask) {
             noUITask();
         }
@@ -130,7 +135,7 @@ void ccWarning(id obj) {
 
 @implementation HaloObjC
 
-+ (void)server {
++ (void)_server {
 
     CGRect _screenBounds         = [UIScreen mainScreen].bounds;
     ScreenBounds                 = _screenBounds;
@@ -140,6 +145,11 @@ void ccWarning(id obj) {
     NavigationBarHeight          = 64;
     TabBarHeight                 = 49;
     StatusBarHeight              = 20;
+    
+    iPhone6P = ScreenWidth == 414;
+    iPhone6 = ScreenWidth == 375;
+    iPhone5 = ScreenHeight == 568;
+    iPhone4s = ScreenHeight == 480;
 
     HomePath                     = NSHomeDirectory();
     CachePath                    = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0];
@@ -159,6 +169,8 @@ void ccWarning(id obj) {
 
     SystemVersion                = [UIDevice currentDevice].systemVersion;
     SystemVersionNumber          = SystemVersion.floatValue;
+    
+    
 }
 
 + (void)logEnable:(BOOL)enable {
@@ -172,7 +184,62 @@ void ccWarning(id obj) {
 + (void)load {
     [super load];
     //  use this way to avoid forgetting call +server method
-    [HaloObjC server];
+    [HaloObjC _server];
+}
+
+@end
+
+#pragma mark - NSString
+
+@implementation NSString (Halo)
+
+- (NSURL *)URL {
+    return [NSURL URLWithString:self];
+}
+
+@end
+
+#pragma mark - UIFont
+
+UIFont *hl_systemFontOfSize(CGFloat size) {
+    return [UIFont systemFontOfSize:size];
+}
+
+#pragma mark - UIButton
+
+@implementation UIButton (Halo)
+
+- (UIFont *)hl_titleFont {
+    return self.titleLabel.font;
+}
+
+- (void)setHl_titleFont:(UIFont *)hl_titleFont {
+    self.titleLabel.font = hl_titleFont;
+}
+
+- (UIColor *)hl_normalTitleColor {
+    return [self titleColorForState:UIControlStateNormal];
+}
+
+- (void)setHl_normalTitleColor:(UIColor *)hl_normalTitleColor {
+    [self setTitleColor:hl_normalTitleColor forState:UIControlStateNormal];
+}
+
+- (NSString *)normalTitle {
+    return [self titleForState:UIControlStateNormal];
+}
+
+- (void)setNormalTitle:(NSString *)normalTitle {
+    [self setTitle:normalTitle forState:UIControlStateNormal];
+}
+
++ (UIButton *)custom {
+    return [UIButton buttonWithType:UIButtonTypeCustom];
+}
+
+- (instancetype)addTouchUpInSideTarget:(id)target action:(SEL)action {
+    [self addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    return self;
 }
 
 @end
@@ -188,6 +255,11 @@ CGRect CM(CGFloat y, CGFloat width, CGFloat height) {
 }
 
 @implementation UIView (Halo)
+
+- (instancetype)addToSuperview:(UIView *)superview {
+    [superview addSubview:self];
+    return self;
+}
 
 - (void)cornerRadius:(CGFloat)radius {
     self.layer.cornerRadius = radius;
@@ -214,7 +286,7 @@ CGRect CM(CGFloat y, CGFloat width, CGFloat height) {
 
 - (void)setHl_insetBottom:(CGFloat)hl_insetBottom {
     UIEdgeInsets inset = self.contentInset;
-    self.contentInset = UIEdgeInsetsMake(inset.top, inset.bottom, hl_insetBottom, inset.right);
+    self.contentInset = UIEdgeInsetsMake(inset.top, inset.left, hl_insetBottom, inset.right);
 }
 
 - (CGFloat)hl_insetTop {
@@ -223,7 +295,7 @@ CGRect CM(CGFloat y, CGFloat width, CGFloat height) {
 
 - (void)setHl_insetTop:(CGFloat)hl_insetTop {
     UIEdgeInsets inset = self.contentInset;
-    self.contentInset = UIEdgeInsetsMake(hl_insetTop, inset.bottom, inset.bottom, inset.right);
+    self.contentInset = UIEdgeInsetsMake(hl_insetTop, inset.left, inset.bottom, inset.right);
 }
 
 - (CGFloat)hl_offsetX {
@@ -284,31 +356,43 @@ CGRect CM(CGFloat y, CGFloat width, CGFloat height) {
 
 @end
 
+#pragma mark - UINavigatoinController
+
+@implementation UINavigationController (Halo)
+
+- (void)barUseColor:(UIColor *)color tintColor:(UIColor *)tintColor shadowColor:(UIColor *)shadowColor {
+    
+    UIGraphicsBeginImageContext(CGSizeMake(1, 1));
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextAddRect(ctx, CGRectMake(0, 0, 1, 1));
+    CGContextSetFillColorWithColor(ctx, color.CGColor);
+    CGContextFillPath(ctx);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+    
+    if (tintColor) {
+        self.navigationBar.tintColor = tintColor;
+        self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : tintColor};
+    }
+    
+    if (shadowColor) {
+        // TODO: 未完成
+    } else {
+        self.navigationBar.shadowImage = image;
+    }
+}
+
+@end
+
 #pragma mark - UIColor
-
-UIColor *ColorWithRGB(CGFloat r, CGFloat g, CGFloat b) {
-    return [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:1.0];
-}
-
-UIColor *ColorWithRGBA(CGFloat r, CGFloat g, CGFloat b, CGFloat a) {
-    return [UIColor colorWithRed:r / 255.0f green:g / 255.0f blue:b / 255.0f alpha:a];
-}
-
-UIColor *ColorWithHexValue(NSUInteger hexValue) {
-    return [UIColor colorWithRed:((float) ((hexValue & 0xFF0000) >> 16)) / 255.0 green:((float) ((hexValue & 0xFF00) >> 8)) / 255.0 blue:((float) (hexValue & 0xFF)) / 255.0 alpha:1.0];
-}
-
-UIColor *ColorWithHexValueA(NSUInteger hexValue, CGFloat a) {
-    return [UIColor colorWithRed:((float) ((hexValue & 0xFF0000) >> 16)) / 255.0 green:((float) ((hexValue & 0xFF00) >> 8)) / 255.0 blue:((float) (hexValue & 0xFF)) / 255.0 alpha:a];
-}
-
 
 /// @see http://stackoverflow.com/questions/3805177/how-to-convert-hex-rgb-color-codes-to-uicolor
 
-void SKScanHexColor(NSString *hexString, float *red, float *green, float *blue, float *alpha) {
+void _SKScanHexColor(NSString *hexString, float *red, float *green, float *blue, float *alpha) {
 
     NSString *cleanString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
-    cc(cleanString);
     if ([cleanString length] == 3) {
         cleanString = [NSString stringWithFormat:@"%@%@%@%@%@%@",
                                                  [cleanString substringWithRange:NSMakeRange(0, 1)], [cleanString substringWithRange:NSMakeRange(0, 1)],
@@ -330,7 +414,7 @@ void SKScanHexColor(NSString *hexString, float *red, float *green, float *blue, 
 
 UIColor *HEX(NSString *hexString) {
     float red, green, blue, alpha;
-    SKScanHexColor(hexString, &red, &green, &blue, &alpha);
+    _SKScanHexColor(hexString, &red, &green, &blue, &alpha);
     return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
 

@@ -27,6 +27,8 @@
     
     [self initData];
     
+    //  Configure WCPageView
+    
     WCPageView *pageView = [WCPageView pageViewWithFrame:CGRectMake(0, 200, ScreenWidth, 200) dataSource:self];
     pageView.infinite = NO;
     pageView.collectionView.delegate = self;

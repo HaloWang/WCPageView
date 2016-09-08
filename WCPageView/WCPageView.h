@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-// TODO: 添加 Assume Not Null
+NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Enumerations
 
@@ -28,25 +28,25 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 @protocol WCPageViewDataSource <NSObject>
 
 @required
-// TODO: 这个方法应该只走一次才好？但是 UITableViewDataSource
-- (void)pageView:(nonnull WCPageView *)pageView configCell:(nonnull UICollectionViewCell *)cell atIndex:(NSInteger)index;
-- (nonnull Class)collectionViewCellClassOfPageView:(nonnull WCPageView *)pageView;
-- (NSInteger)numberOfItemsInPageView:(nonnull WCPageView *)pageView;
+- (void)pageView:(WCPageView *)pageView configCell:(UICollectionViewCell *)cell atIndex:(NSInteger)index;
+- (Class)collectionViewCellClassOfPageView:(WCPageView *)pageView;
+- (NSInteger)numberOfItemsInPageView:(WCPageView *)pageView;
 
 @optional
-- (void)pageView:(nonnull WCPageView *)pageView currentPageIndexChangeTo:(NSInteger)currentPageIndex;
+- (void)pageView:(WCPageView *)pageView currentPageIndexChangeTo:(NSInteger)currentPageIndex;
+- (void)pageViewWillReloadData:(WCPageView *)pageView;
 
 @end
-
-// TODO: 是不是应该提供一个 segment ？
 
 @interface WCPageView : UIView
 
 #pragma mark - Constructor & Required Properties
 
-+ (nonnull WCPageView *)pageViewWithFrame:(CGRect)frame dataSource:(nonnull id<WCPageViewDataSource>)dataSource;
++ (WCPageView *)pageViewWithFrame:(CGRect)frame dataSource:(id<WCPageViewDataSource>)dataSource;
 
-@property (nonatomic, weak) id<WCPageViewDataSource> dataSource;
+@property (nonatomic, nullable, weak) id<WCPageViewDataSource> dataSource;
+
+@property (nonatomic, nullable, readonly) UICollectionViewCell *currentDisplayingCell;
 
 - (void)setPageIndex:(NSInteger)index animated:(BOOL)animated;
 
@@ -61,8 +61,8 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 
 #pragma mark - Readonly Properties
 
-@property (nonatomic, readonly, nonnull) UICollectionViewFlowLayout *layout;
-@property (nonatomic, readonly, nonnull) UICollectionView *collectionView;
+@property (nonatomic, readonly) UICollectionViewFlowLayout *layout;
+@property (nonatomic, readonly) UICollectionView *collectionView;
 
 #pragma mark - UIPageControl
 
@@ -84,13 +84,11 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 /// 自动滚动频率，默认为 5s
 @property (nonatomic, assign) NSTimeInterval frequency;
 
-/// 每次滚动动画持续时间，默认为 0.25s，未完成 ⚠️
-@property (nonatomic, assign) NSTimeInterval duration;
-
-
 @property (nonatomic, assign) NSTimeInterval firstFireDelay;
 
 /// 滚动是否有动画，默认为 YES
 @property (nonatomic, assign) BOOL animated;
 
 @end
+
+NS_ASSUME_NONNULL_END

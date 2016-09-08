@@ -27,30 +27,15 @@ NSInteger const InfiniteNumberOfItems = 1000;
     return [self.dataSource numberOfItemsInPageView:self];
 }
 
+- (UICollectionViewCell *)currentDisplayingCell {
+    NSArray *cells = [self.collectionView visibleCells];
+    return cells.count > 0 ? cells.firstObject : nil;
+}
+
 #pragma mark Init & Deinit
 
 + (WCPageView *)pageViewWithFrame:(CGRect)frame dataSource:(id<WCPageViewDataSource>)dataSource {
     return [[WCPageView alloc] initWithFrame:frame dataSource:dataSource];
-}
-
-- (void)setPageIndex:(NSInteger)index animated:(BOOL)animated {
-    if (index == self.currentPageIndex) {
-        return;
-    }
-    CGPoint _point = self.collectionView.contentOffset;
-    _point.x += (index - self.currentPageIndex) * self.collectionView.frame.size.width;
-    [self.collectionView setContentOffset:_point animated:animated];
-}
-
-- (void)reloadData {
-    // TODO: 未完成
-    [self backToBeginPageIndex];
-    [self.collectionView reloadData];
-    _pageControl.numberOfPages = [self.dataSource numberOfItemsInPageView:self];
-}
-
-- (void)backToBeginPageIndex {
-    // TODO: 未完成
 }
 
 - (instancetype)initWithFrame:(CGRect)frame dataSource:(id<WCPageViewDataSource>)dataSource {
@@ -58,12 +43,6 @@ NSInteger const InfiniteNumberOfItems = 1000;
     if (self) {
         
         _animated  = YES;
-        _frequency = 5;
-        _duration  = 0.25;
-        
-        _timer = [NSTimer scheduledTimerWithTimeInterval:_frequency target:self selector:@selector(timePass) userInfo:nil repeats:YES];
-        // TODO: 作用？
-        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
         
         _infinite                            = YES;
         _automaticallyPageControlCurrentPage = YES;
@@ -83,6 +62,8 @@ NSInteger const InfiniteNumberOfItems = 1000;
         _collectionView.dataSource = self;
         _collectionView.pagingEnabled = true;
         _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.directionalLockEnabled = YES;
         _collectionView.backgroundColor = [UIColor clearColor];
         Class cellClass = [_dataSource collectionViewCellClassOfPageView:self];
         [_collectionView registerClass:cellClass forCellWithReuseIdentifier:NSStringFromClass(cellClass)];
@@ -98,6 +79,9 @@ NSInteger const InfiniteNumberOfItems = 1000;
         //  Observer contentSize to change pageControl value
         [_collectionView addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
         [self addObserver:self forKeyPath:@"currentPageIndex" options:NSKeyValueObservingOptionNew context:nil];
+        
+        self.frequency = 5;
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
     }
     return self;
 }
@@ -105,12 +89,32 @@ NSInteger const InfiniteNumberOfItems = 1000;
 - (void)dealloc {
     [_collectionView removeObserver:self forKeyPath:@"contentOffset"];
     [self removeObserver:self forKeyPath:@"currentPageIndex"];
+    [_timer invalidate];
 }
 
 #pragma mark - Private Methods
 
 - (void)pageControlValueChanged {
     
+}
+
+#pragma mark - Public Methods
+
+- (void)setPageIndex:(NSInteger)index animated:(BOOL)animated {
+    if (index == self.currentPageIndex) {
+        return;
+    }
+    CGPoint _point = self.collectionView.contentOffset;
+    _point.x += (index - self.currentPageIndex) * self.collectionView.frame.size.width;
+    [self.collectionView setContentOffset:_point animated:animated];
+}
+
+- (void)reloadData {
+    if ([self.dataSource respondsToSelector:@selector(pageViewWillReloadData:)]) {
+        [self.dataSource pageViewWillReloadData:self];
+    }
+    [self.collectionView reloadData];
+    _pageControl.numberOfPages = [self.dataSource numberOfItemsInPageView:self];
 }
 
 #pragma mark - KVO
@@ -123,7 +127,7 @@ NSInteger const InfiniteNumberOfItems = 1000;
             self.currentPageIndex = _judgedPageIndex;
         }
     }
-
+    
     if ([keyPath isEqualToString:@"currentPageIndex"]) {
         if (self.automaticallyPageControlCurrentPage) {
             self.pageControl.currentPage = self.currentPageIndex;
@@ -136,11 +140,11 @@ NSInteger const InfiniteNumberOfItems = 1000;
 }
 
 - (NSInteger)judgePageIndex {
-
+    
     if (self.pageCount == 0) {
         return 0;
     }
-
+    
     CGFloat adjustOffset = 0;
     switch (self.pageIndexChangePosition) {
         case WCPageViewCurrentPageIndexChangePositionHeader:
@@ -198,18 +202,39 @@ NSInteger const InfiniteNumberOfItems = 1000;
     });
 }
 
+- (void)setFrequency:(NSTimeInterval)frequency {
+    _frequency = frequency;
+    [self.timer invalidate];
+    self.timer = nil;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:_frequency target:self selector:@selector(timePass) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+
 - (void)setTimerEnable:(BOOL)timerEnable {
+    if (_timer == nil) {
+        return;
+    }
     if (timerEnable) {
-        [_timer fire];
+        if (!_timer.isValid) {
+            [_timer fire];
+        }
     } else {
         [_timer invalidate];
     }
 }
 
 - (void)showNextPage {
-    CGFloat _collectionViewWidth = _collectionView.frame.size.width;
-    CGPoint newOffset = CGPointMake(((NSInteger)(_collectionView.contentOffset.x / _collectionViewWidth)) * _collectionViewWidth + _collectionViewWidth, 0);
-    [_collectionView setContentOffset:newOffset animated:self.animated];
+    
+    CGFloat _collectionViewWidth = self.collectionView.frame.size.width;
+    CGFloat _oldCollectionViewOffsetX = self.collectionView.contentOffset.x;
+    
+    if ([self isInfinite] && (_oldCollectionViewOffsetX / _collectionViewWidth) == InfiniteNumberOfItems - 1) {
+        CGFloat jumpOffsetX = ((InfiniteNumberOfItems - 1) % self.pageCount) * _collectionViewWidth;
+        [self.collectionView setContentOffset:CGPointMake(jumpOffsetX, 0) animated:NO];
+    }
+    
+    CGPoint newOffset = CGPointMake(((NSInteger)(self.collectionView.contentOffset.x / _collectionViewWidth)) * _collectionViewWidth + _collectionViewWidth, 0);
+    [self.collectionView setContentOffset:newOffset animated:self.animated];
 }
                   
 
