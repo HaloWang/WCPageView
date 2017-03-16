@@ -1,3 +1,6 @@
+
+platform :ios, '8.0'
+
 target 'WCPageViewDemo' do
 	pod 'HaloObjC'
 	pod 'FangYuanObjC'

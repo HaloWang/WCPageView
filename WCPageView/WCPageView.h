@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+// TODO: 还没有设定回到初始 Index 的方法
+
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Enumerations
@@ -28,6 +30,7 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 @protocol WCPageViewDataSource <NSObject>
 
 @required
+/// 该方法在 WCPageView.collectionView.cellForItemAtIndexPath 是被调用
 - (void)pageView:(WCPageView *)pageView configCell:(UICollectionViewCell *)cell atIndex:(NSInteger)index;
 - (Class)collectionViewCellClassOfPageView:(WCPageView *)pageView;
 - (NSInteger)numberOfItemsInPageView:(WCPageView *)pageView;

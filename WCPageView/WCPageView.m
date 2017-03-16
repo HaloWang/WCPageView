@@ -127,7 +127,7 @@ NSInteger const InfiniteNumberOfItems = 1000;
             self.currentPageIndex = _judgedPageIndex;
         }
     }
-    
+
     if ([keyPath isEqualToString:@"currentPageIndex"]) {
         if (self.automaticallyPageControlCurrentPage) {
             self.pageControl.currentPage = self.currentPageIndex;
@@ -140,11 +140,11 @@ NSInteger const InfiniteNumberOfItems = 1000;
 }
 
 - (NSInteger)judgePageIndex {
-    
+
     if (self.pageCount == 0) {
         return 0;
     }
-    
+
     CGFloat adjustOffset = 0;
     switch (self.pageIndexChangePosition) {
         case WCPageViewCurrentPageIndexChangePositionHeader:
@@ -236,6 +236,4 @@ NSInteger const InfiniteNumberOfItems = 1000;
     CGPoint newOffset = CGPointMake(((NSInteger)(self.collectionView.contentOffset.x / _collectionViewWidth)) * _collectionViewWidth + _collectionViewWidth, 0);
     [self.collectionView setContentOffset:newOffset animated:self.animated];
 }
-                  
-
 @end

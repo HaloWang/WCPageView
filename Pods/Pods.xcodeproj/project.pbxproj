@@ -7,47 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A77AAF20EC5F43499CA7FF5CA040A88 /* WCPageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1684E2DF530A429D7FDD0D404F2D17FC /* WCPageView-dummy.m */; };
-		0DEF83A6802BA4DE4578F62FC93F4EDE /* HaloObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = A7165A2F254C4154F11F19F6E0DDA78B /* HaloObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		156FB5CB084097C9ADC159A0BAF11217 /* FangYuanObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6F3A9E73CB99E4736927056E21387 /* FangYuanObjC-dummy.m */; };
-		157D546E2DB735095507827C21494DBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		19DF6BF8668F7C49CCC3A611F0EC45CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		2216C31DB7EB21030681E6AEC992EA17 /* WCPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAD5F10F4E716DCD164283CE3569680 /* WCPageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46AEEE8D50044913ECCD3CB94E80A6FE /* FangYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = E7991C532F25D511F104C93742E8D146 /* FangYuan.m */; };
-		4D4B7F3C2D536CC336D46D45A87A62AB /* WCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B256D62528951AB4206337CE4E374DF9 /* WCPageView.m */; };
-		4EAEDB9AF13595C99FB24EE5A8D958E7 /* UIView+FangYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 022EA2005EAA6EB9C3FB029CB058C653 /* UIView+FangYuan.m */; };
-		539D7EC6DC9B4C669C452180DF228A98 /* UIView+FangYuan.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE7035B4FA165C1963554B25BE1FAF4 /* UIView+FangYuan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D0FAFBD634F32F5272D86F815A8ADD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
-		8C0B52940AD9801B4D30B2CF789712CD /* Pods-WCPageViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A93FBDB7AEF2734DE33EF7C9A30353 /* Pods-WCPageViewDemo-dummy.m */; };
-		B6EC9CC9BB291044214791CED5692BCF /* FangYuan.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8CA1A2CF06B2403461E7EA874A13D8 /* FangYuan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C60FA13A27F59F33C58323F204842A3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		D8BDC2ADEE0F781ED5D2059EAB10D6C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
-		FB029B4426D251752E8B84CFF6EEB20C /* HaloObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D10FDAB877250303D63CA329F15F33 /* HaloObjC-dummy.m */; };
-		FEA92BF95F1825B26F566BE8646247B3 /* HaloObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A55EA08A2DAEB7C380A256DA0DE4F75 /* HaloObjC.m */; };
-		FFA1107F227DCF70167DC0AE2D853C50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		0441713D161A6698BDA0B1DDAB447C11 /* WCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B256D62528951AB4206337CE4E374DF9 /* WCPageView.m */; };
+		0FEC0D908E01989F1764BE0A2B681F5E /* Pods-WCPageViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A93FBDB7AEF2734DE33EF7C9A30353 /* Pods-WCPageViewDemo-dummy.m */; };
+		1773D0F5FB6D66906A1B20D7EF115391 /* WCPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAD5F10F4E716DCD164283CE3569680 /* WCPageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28452E4724C212024ECFC34AF72CF20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		3214423CD407BDB6F665E6F2E2BCE77A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		42D273D7DC58D284AE71EE23B2C7DAF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		46CB9E858E04F29EB41F8AF33B6FF526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		4785FD7B2CD28CE46FEFFFF17B75C297 /* HaloObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = A7165A2F254C4154F11F19F6E0DDA78B /* HaloObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		658F6464040F929F35D1C940261582EB /* UIView+FangYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 022EA2005EAA6EB9C3FB029CB058C653 /* UIView+FangYuan.m */; };
+		6E87C88FD2279C5054197444A56A2535 /* WCPageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1684E2DF530A429D7FDD0D404F2D17FC /* WCPageView-dummy.m */; };
+		7495B91E665A91E3FCBCED3DC2E4EC0C /* FangYuanObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6F3A9E73CB99E4736927056E21387 /* FangYuanObjC-dummy.m */; };
+		AC7E5479C9AB3ABF4F48FD5EA159E87C /* HaloObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A55EA08A2DAEB7C380A256DA0DE4F75 /* HaloObjC.m */; };
+		CABFF470659427ABF4EA8957A3688140 /* UIView+FangYuan.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE7035B4FA165C1963554B25BE1FAF4 /* UIView+FangYuan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA990FDFCB2C7B025A28041E6D5942E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		DC34850B38D1F71A590267016A441021 /* HaloObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D10FDAB877250303D63CA329F15F33 /* HaloObjC-dummy.m */; };
+		EB21ACC3675C06B54BDBD59ACBCAE108 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		F2805EB79B654B485B1B55741E0A887B /* FangYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = E7991C532F25D511F104C93742E8D146 /* FangYuan.m */; };
+		FFAA76201626E54BC57AE7776D6B52F5 /* FangYuan.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8CA1A2CF06B2403461E7EA874A13D8 /* FangYuan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		231543922D14046468E3A07E4AAD1C42 /* PBXContainerItemProxy */ = {
+		1D01BE97F561D77BE6EAD17A2A889A6D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B172A41E9693501186EE63B6D57B4B27;
-			remoteInfo = WCPageView;
+			remoteGlobalIDString = 517CF975EC349DC7154CAE4BC49C604D;
+			remoteInfo = FangYuanObjC;
 		};
-		B66619AB879E41822224D1CDDB16D8FD /* PBXContainerItemProxy */ = {
+		4CCE66CCD179FE5412CAE35429DC99C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8ACDD1A96C8DEEF3D130B920B36A3D4B;
+			remoteGlobalIDString = B402934AE2DA78E1CD92CC1CB42A00B7;
 			remoteInfo = HaloObjC;
 		};
-		F3CA78432D97BB40C4E238A9119E15C4 /* PBXContainerItemProxy */ = {
+		54E8906D5991D25C100FDF8954AEFBB3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0BDBAA0C98244AEC285E14749EA87CF3;
-			remoteInfo = FangYuanObjC;
+			remoteGlobalIDString = 60007F4E50320581CECD12BAAEB9866A;
+			remoteInfo = WCPageView;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -60,18 +60,19 @@
 		14B6F3A9E73CB99E4736927056E21387 /* FangYuanObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FangYuanObjC-dummy.m"; sourceTree = "<group>"; };
 		1684E2DF530A429D7FDD0D404F2D17FC /* WCPageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCPageView-dummy.m"; sourceTree = "<group>"; };
 		1B8CA1A2CF06B2403461E7EA874A13D8 /* FangYuan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FangYuan.h; path = FangYuanObjC/FangYuan.h; sourceTree = "<group>"; };
-		2A4581CCABBE70C07F13EB8F3FE9D8AF /* libWCPageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWCPageView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A4581CCABBE70C07F13EB8F3FE9D8AF /* libWCPageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWCPageView.a; path = libWCPageView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED72893C7669E8AE3B89F6217C0ECDE /* WCPageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCPageView-prefix.pch"; sourceTree = "<group>"; };
 		3D96FB6558948260E37462C2434F7438 /* WCPageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCPageView.xcconfig; sourceTree = "<group>"; };
-		4458C602D248D58C11F0BB5C3E88CDFB /* libPods-WCPageViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WCPageViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4458C602D248D58C11F0BB5C3E88CDFB /* libPods-WCPageViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WCPageViewDemo.a"; path = "libPods-WCPageViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51D10FDAB877250303D63CA329F15F33 /* HaloObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HaloObjC-dummy.m"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6A55EA08A2DAEB7C380A256DA0DE4F75 /* HaloObjC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HaloObjC.m; path = HaloObjC/HaloObjC.m; sourceTree = "<group>"; };
 		758C39D394B4432DF4CD8FCCDDD51F14 /* FangYuanObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FangYuanObjC-prefix.pch"; sourceTree = "<group>"; };
-		8AD305903103EBAF28AECD420741CA7D /* libHaloObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHaloObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8AD305903103EBAF28AECD420741CA7D /* libHaloObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHaloObjC.a; path = libHaloObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE7035B4FA165C1963554B25BE1FAF4 /* UIView+FangYuan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FangYuan.h"; path = "FangYuanObjC/UIView+FangYuan.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C673D710B5A844017694B7DC689EC94 /* libFangYuanObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFangYuanObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C673D710B5A844017694B7DC689EC94 /* libFangYuanObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFangYuanObjC.a; path = libFangYuanObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7165A2F254C4154F11F19F6E0DDA78B /* HaloObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HaloObjC.h; path = HaloObjC/HaloObjC.h; sourceTree = "<group>"; };
 		A7A93FBDB7AEF2734DE33EF7C9A30353 /* Pods-WCPageViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WCPageViewDemo-dummy.m"; sourceTree = "<group>"; };
 		A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HaloObjC.xcconfig; sourceTree = "<group>"; };
@@ -82,41 +83,40 @@
 		DBAE24BF2048675BBC8BDDA29411259D /* Pods-WCPageViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WCPageViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E7991C532F25D511F104C93742E8D146 /* FangYuan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FangYuan.m; path = FangYuanObjC/FangYuan.m; sourceTree = "<group>"; };
 		E7A968C005DDC14C42080A44E5C5EB72 /* Pods-WCPageViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCPageViewDemo-resources.sh"; sourceTree = "<group>"; };
-		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5794F7747DEDE4DFC67C409FFE8B55FE /* Frameworks */ = {
+		12DFB25A9CB43BD867F80CDB1E085083 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C60FA13A27F59F33C58323F204842A3B /* Foundation.framework in Frameworks */,
-				19DF6BF8668F7C49CCC3A611F0EC45CB /* UIKit.framework in Frameworks */,
+				3214423CD407BDB6F665E6F2E2BCE77A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6572AFE088A3B5962A6161301D826F21 /* Frameworks */ = {
+		47F228E08BFD0E2F50BBD1FBAA0904AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				157D546E2DB735095507827C21494DBF /* Foundation.framework in Frameworks */,
-				5D0FAFBD634F32F5272D86F815A8ADD6 /* UIKit.framework in Frameworks */,
+				28452E4724C212024ECFC34AF72CF20B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BEC11A02B70A6828FA8A82CD9EF8E856 /* Frameworks */ = {
+		D6389D690FBD8B7F24BBA41DF5942EC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFA1107F227DCF70167DC0AE2D853C50 /* Foundation.framework in Frameworks */,
+				46CB9E858E04F29EB41F8AF33B6FF526 /* Foundation.framework in Frameworks */,
+				42D273D7DC58D284AE71EE23B2C7DAF1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3A293D4AE093354F2161EA9669AE69B /* Frameworks */ = {
+		ECFBF7F292B2ADFBAA724F7817B07FB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8BDC2ADEE0F781ED5D2059EAB10D6C8 /* Foundation.framework in Frameworks */,
+				DA990FDFCB2C7B025A28041E6D5942E4 /* Foundation.framework in Frameworks */,
+				EB21ACC3675C06B54BDBD59ACBCAE108 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,7 +169,7 @@
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,6 +225,7 @@
 				022EA2005EAA6EB9C3FB029CB058C653 /* UIView+FangYuan.m */,
 				8C6DCF49640DEB6E1C44AC0C9F9A5C79 /* Support Files */,
 			);
+			name = FangYuanObjC;
 			path = FangYuanObjC;
 			sourceTree = "<group>";
 		};
@@ -235,6 +236,7 @@
 				6A55EA08A2DAEB7C380A256DA0DE4F75 /* HaloObjC.m */,
 				A509A55F9CA590E1CE32F13123693062 /* Support Files */,
 			);
+			name = HaloObjC;
 			path = HaloObjC;
 			sourceTree = "<group>";
 		};
@@ -260,11 +262,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
-				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -272,41 +274,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		480296C81EC151510FC8D6C9ED52D593 /* Headers */ = {
+		C456FFD6B5431F49F4A1CC0E10D7C47A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2216C31DB7EB21030681E6AEC992EA17 /* WCPageView.h in Headers */,
+				FFAA76201626E54BC57AE7776D6B52F5 /* FangYuan.h in Headers */,
+				CABFF470659427ABF4EA8957A3688140 /* UIView+FangYuan.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B352211921F29F1BAA1044DF4761C69 /* Headers */ = {
+		D011895C554CA8257F92759F544A43AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DEF83A6802BA4DE4578F62FC93F4EDE /* HaloObjC.h in Headers */,
+				4785FD7B2CD28CE46FEFFFF17B75C297 /* HaloObjC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54CFCAAC0086D8E39D9F0D7E09787035 /* Headers */ = {
+		D6D4DE37203F9396641C03CD3A59101E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6EC9CC9BB291044214791CED5692BCF /* FangYuan.h in Headers */,
-				539D7EC6DC9B4C669C452180DF228A98 /* UIView+FangYuan.h in Headers */,
+				1773D0F5FB6D66906A1B20D7EF115391 /* WCPageView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0BDBAA0C98244AEC285E14749EA87CF3 /* FangYuanObjC */ = {
+		517CF975EC349DC7154CAE4BC49C604D /* FangYuanObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB4867D79E3E285579E7A694777BB686 /* Build configuration list for PBXNativeTarget "FangYuanObjC" */;
+			buildConfigurationList = 3E4D5F47A43ED116EAA6F7784A3D49BD /* Build configuration list for PBXNativeTarget "FangYuanObjC" */;
 			buildPhases = (
-				ABA81D58EE20B28003CA92F728C7D830 /* Sources */,
-				5794F7747DEDE4DFC67C409FFE8B55FE /* Frameworks */,
-				54CFCAAC0086D8E39D9F0D7E09787035 /* Headers */,
+				A61489E3A864827C0121C2667D5E462A /* Sources */,
+				D6389D690FBD8B7F24BBA41DF5942EC6 /* Frameworks */,
+				C456FFD6B5431F49F4A1CC0E10D7C47A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -317,49 +319,13 @@
 			productReference = 9C673D710B5A844017694B7DC689EC94 /* libFangYuanObjC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8ACDD1A96C8DEEF3D130B920B36A3D4B /* HaloObjC */ = {
+		60007F4E50320581CECD12BAAEB9866A /* WCPageView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 804EB14319E6994E77BCED7EFD201078 /* Build configuration list for PBXNativeTarget "HaloObjC" */;
+			buildConfigurationList = E05D32AD7035DB84761C6DC498A77E08 /* Build configuration list for PBXNativeTarget "WCPageView" */;
 			buildPhases = (
-				17C354B648D48C3E4B881CD745ED5CAB /* Sources */,
-				6572AFE088A3B5962A6161301D826F21 /* Frameworks */,
-				4B352211921F29F1BAA1044DF4761C69 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = HaloObjC;
-			productName = HaloObjC;
-			productReference = 8AD305903103EBAF28AECD420741CA7D /* libHaloObjC.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9ED24BD803D26516981A986F12A6C93C /* Pods-WCPageViewDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 37524BE80B8897AEAF9FC210AB436B0E /* Build configuration list for PBXNativeTarget "Pods-WCPageViewDemo" */;
-			buildPhases = (
-				4EDDCC539BF88DE21B11831643608F28 /* Sources */,
-				E3A293D4AE093354F2161EA9669AE69B /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46FEF1B516D29864750CB207F6C15F36 /* PBXTargetDependency */,
-				5106D0D0E1A027F274FA942027D727AA /* PBXTargetDependency */,
-				5BD2106F71401D9C6BFDA70DDF4252D3 /* PBXTargetDependency */,
-			);
-			name = "Pods-WCPageViewDemo";
-			productName = "Pods-WCPageViewDemo";
-			productReference = 4458C602D248D58C11F0BB5C3E88CDFB /* libPods-WCPageViewDemo.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B172A41E9693501186EE63B6D57B4B27 /* WCPageView */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F4D0EBA06A49A4148AAFD50D416DA66 /* Build configuration list for PBXNativeTarget "WCPageView" */;
-			buildPhases = (
-				2A35AB82D312125CD9BC35D21613F382 /* Sources */,
-				BEC11A02B70A6828FA8A82CD9EF8E856 /* Frameworks */,
-				480296C81EC151510FC8D6C9ED52D593 /* Headers */,
+				308A596D26691C7CB612FBFB8D057E5B /* Sources */,
+				47F228E08BFD0E2F50BBD1FBAA0904AE /* Frameworks */,
+				D6D4DE37203F9396641C03CD3A59101E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -368,6 +334,42 @@
 			name = WCPageView;
 			productName = WCPageView;
 			productReference = 2A4581CCABBE70C07F13EB8F3FE9D8AF /* libWCPageView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		77C6707C858FA4BEBD77B419980D27A1 /* Pods-WCPageViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D633FFA6023B7C97608EE8B7A798244F /* Build configuration list for PBXNativeTarget "Pods-WCPageViewDemo" */;
+			buildPhases = (
+				4B0898CF137C036B08B291277D3C94A2 /* Sources */,
+				12DFB25A9CB43BD867F80CDB1E085083 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FB34CE6568387F28A9964488D2CD003 /* PBXTargetDependency */,
+				063A238BC18E796DC9F33A4F5BE3C175 /* PBXTargetDependency */,
+				630502C9BE0B541590A0F8C4ABD069B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-WCPageViewDemo";
+			productName = "Pods-WCPageViewDemo";
+			productReference = 4458C602D248D58C11F0BB5C3E88CDFB /* libPods-WCPageViewDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B402934AE2DA78E1CD92CC1CB42A00B7 /* HaloObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9AFEEB0A5325BBE9FD19A8FA4823B7D /* Build configuration list for PBXNativeTarget "HaloObjC" */;
+			buildPhases = (
+				E3077543FBB55D56D9FA8CF91D9AC903 /* Sources */,
+				ECFBF7F292B2ADFBAA724F7817B07FB5 /* Frameworks */,
+				D011895C554CA8257F92759F544A43AD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HaloObjC;
+			productName = HaloObjC;
+			productReference = 8AD305903103EBAF28AECD420741CA7D /* libHaloObjC.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -391,160 +393,76 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0BDBAA0C98244AEC285E14749EA87CF3 /* FangYuanObjC */,
-				8ACDD1A96C8DEEF3D130B920B36A3D4B /* HaloObjC */,
-				9ED24BD803D26516981A986F12A6C93C /* Pods-WCPageViewDemo */,
-				B172A41E9693501186EE63B6D57B4B27 /* WCPageView */,
+				517CF975EC349DC7154CAE4BC49C604D /* FangYuanObjC */,
+				B402934AE2DA78E1CD92CC1CB42A00B7 /* HaloObjC */,
+				77C6707C858FA4BEBD77B419980D27A1 /* Pods-WCPageViewDemo */,
+				60007F4E50320581CECD12BAAEB9866A /* WCPageView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17C354B648D48C3E4B881CD745ED5CAB /* Sources */ = {
+		308A596D26691C7CB612FBFB8D057E5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB029B4426D251752E8B84CFF6EEB20C /* HaloObjC-dummy.m in Sources */,
-				FEA92BF95F1825B26F566BE8646247B3 /* HaloObjC.m in Sources */,
+				6E87C88FD2279C5054197444A56A2535 /* WCPageView-dummy.m in Sources */,
+				0441713D161A6698BDA0B1DDAB447C11 /* WCPageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A35AB82D312125CD9BC35D21613F382 /* Sources */ = {
+		4B0898CF137C036B08B291277D3C94A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A77AAF20EC5F43499CA7FF5CA040A88 /* WCPageView-dummy.m in Sources */,
-				4D4B7F3C2D536CC336D46D45A87A62AB /* WCPageView.m in Sources */,
+				0FEC0D908E01989F1764BE0A2B681F5E /* Pods-WCPageViewDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EDDCC539BF88DE21B11831643608F28 /* Sources */ = {
+		A61489E3A864827C0121C2667D5E462A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C0B52940AD9801B4D30B2CF789712CD /* Pods-WCPageViewDemo-dummy.m in Sources */,
+				F2805EB79B654B485B1B55741E0A887B /* FangYuan.m in Sources */,
+				7495B91E665A91E3FCBCED3DC2E4EC0C /* FangYuanObjC-dummy.m in Sources */,
+				658F6464040F929F35D1C940261582EB /* UIView+FangYuan.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ABA81D58EE20B28003CA92F728C7D830 /* Sources */ = {
+		E3077543FBB55D56D9FA8CF91D9AC903 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46AEEE8D50044913ECCD3CB94E80A6FE /* FangYuan.m in Sources */,
-				156FB5CB084097C9ADC159A0BAF11217 /* FangYuanObjC-dummy.m in Sources */,
-				4EAEDB9AF13595C99FB24EE5A8D958E7 /* UIView+FangYuan.m in Sources */,
+				DC34850B38D1F71A590267016A441021 /* HaloObjC-dummy.m in Sources */,
+				AC7E5479C9AB3ABF4F48FD5EA159E87C /* HaloObjC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		46FEF1B516D29864750CB207F6C15F36 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FangYuanObjC;
-			target = 0BDBAA0C98244AEC285E14749EA87CF3 /* FangYuanObjC */;
-			targetProxy = F3CA78432D97BB40C4E238A9119E15C4 /* PBXContainerItemProxy */;
-		};
-		5106D0D0E1A027F274FA942027D727AA /* PBXTargetDependency */ = {
+		063A238BC18E796DC9F33A4F5BE3C175 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HaloObjC;
-			target = 8ACDD1A96C8DEEF3D130B920B36A3D4B /* HaloObjC */;
-			targetProxy = B66619AB879E41822224D1CDDB16D8FD /* PBXContainerItemProxy */;
+			target = B402934AE2DA78E1CD92CC1CB42A00B7 /* HaloObjC */;
+			targetProxy = 4CCE66CCD179FE5412CAE35429DC99C4 /* PBXContainerItemProxy */;
 		};
-		5BD2106F71401D9C6BFDA70DDF4252D3 /* PBXTargetDependency */ = {
+		1FB34CE6568387F28A9964488D2CD003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FangYuanObjC;
+			target = 517CF975EC349DC7154CAE4BC49C604D /* FangYuanObjC */;
+			targetProxy = 1D01BE97F561D77BE6EAD17A2A889A6D /* PBXContainerItemProxy */;
+		};
+		630502C9BE0B541590A0F8C4ABD069B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WCPageView;
-			target = B172A41E9693501186EE63B6D57B4B27 /* WCPageView */;
-			targetProxy = 231543922D14046468E3A07E4AAD1C42 /* PBXContainerItemProxy */;
+			target = 60007F4E50320581CECD12BAAEB9866A /* WCPageView */;
+			targetProxy = 54E8906D5991D25C100FDF8954AEFBB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01C1E3A47AB56AC7E2414DD62E313197 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HaloObjC/HaloObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		047F7B3DE8A8C82B196FFE5CA09777C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/HaloObjC/HaloObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1C782C1BC0AA43A02B65C1E48C82EDE4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C402FFBFF7CAC5BA17B0B6BB1960F5A7 /* FangYuanObjC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FangYuanObjC/FangYuanObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3072FD9478814B45348B4B201FBFC64E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D96FB6558948260E37462C2434F7438 /* WCPageView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WCPageView/WCPageView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -562,107 +480,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		59EE4D2CABFC2A6E43CC75B03E67589A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D96FB6558948260E37462C2434F7438 /* WCPageView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WCPageView/WCPageView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5A3056260FC3A9419F88C5D2DED5D4B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E90B5791F085A2183CA5BF73E4A04E6 /* Pods-WCPageViewDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		5B4A26E89058A987041B767EA621B413 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C70470C0CC52F4EC45F1AD4050D695D9 /* Pods-WCPageViewDemo.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -680,18 +498,176 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		ECBE30184EFA168A5897E15CEAA6B301 /* Debug */ = {
+		048DD34FA2A42BB86E1530AC6CFBB262 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HaloObjC/HaloObjC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2BC180DD091AA69E259756976C5E894A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C402FFBFF7CAC5BA17B0B6BB1960F5A7 /* FangYuanObjC.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FangYuanObjC/FangYuanObjC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59B6B7DE30E32816CF8A00282F13164C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HaloObjC/HaloObjC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6642CD3F538FD1D42C79C8593746390A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D96FB6558948260E37462C2434F7438 /* WCPageView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WCPageView/WCPageView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		76CD3D4C90A48DDEFF45B72EF0D2F784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70470C0CC52F4EC45F1AD4050D695D9 /* Pods-WCPageViewDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		841EB43390738FFB89ECC4617E1816D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C402FFBFF7CAC5BA17B0B6BB1960F5A7 /* FangYuanObjC.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -708,50 +684,96 @@
 			};
 			name = Debug;
 		};
+		F1A4F536609BA45E950A6780141A4916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E90B5791F085A2183CA5BF73E4A04E6 /* Pods-WCPageViewDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F33FAC82A9B559C937EF1908CCD4ADFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D96FB6558948260E37462C2434F7438 /* WCPageView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WCPageView/WCPageView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
-				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37524BE80B8897AEAF9FC210AB436B0E /* Build configuration list for PBXNativeTarget "Pods-WCPageViewDemo" */ = {
+		3E4D5F47A43ED116EAA6F7784A3D49BD /* Build configuration list for PBXNativeTarget "FangYuanObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B4A26E89058A987041B767EA621B413 /* Debug */,
-				5A3056260FC3A9419F88C5D2DED5D4B0 /* Release */,
+				841EB43390738FFB89ECC4617E1816D0 /* Debug */,
+				2BC180DD091AA69E259756976C5E894A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F4D0EBA06A49A4148AAFD50D416DA66 /* Build configuration list for PBXNativeTarget "WCPageView" */ = {
+		B9AFEEB0A5325BBE9FD19A8FA4823B7D /* Build configuration list for PBXNativeTarget "HaloObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59EE4D2CABFC2A6E43CC75B03E67589A /* Debug */,
-				3072FD9478814B45348B4B201FBFC64E /* Release */,
+				59B6B7DE30E32816CF8A00282F13164C /* Debug */,
+				048DD34FA2A42BB86E1530AC6CFBB262 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		804EB14319E6994E77BCED7EFD201078 /* Build configuration list for PBXNativeTarget "HaloObjC" */ = {
+		D633FFA6023B7C97608EE8B7A798244F /* Build configuration list for PBXNativeTarget "Pods-WCPageViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				01C1E3A47AB56AC7E2414DD62E313197 /* Debug */,
-				047F7B3DE8A8C82B196FFE5CA09777C4 /* Release */,
+				76CD3D4C90A48DDEFF45B72EF0D2F784 /* Debug */,
+				F1A4F536609BA45E950A6780141A4916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB4867D79E3E285579E7A694777BB686 /* Build configuration list for PBXNativeTarget "FangYuanObjC" */ = {
+		E05D32AD7035DB84761C6DC498A77E08 /* Build configuration list for PBXNativeTarget "WCPageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ECBE30184EFA168A5897E15CEAA6B301 /* Debug */,
-				1C782C1BC0AA43A02B65C1E48C82EDE4 /* Release */,
+				6642CD3F538FD1D42C79C8593746390A /* Debug */,
+				F33FAC82A9B559C937EF1908CCD4ADFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
