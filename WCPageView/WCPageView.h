@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 @protocol WCPageViewDataSource <NSObject>
 
 @required
-/// 该方法在 WCPageView.collectionView.cellForItemAtIndexPath 是被调用
+/// 该方法在 WCPageView.collectionView.cellForItemAtIndexPath 时被调用
 - (void)pageView:(WCPageView *)pageView configCell:(UICollectionViewCell *)cell atIndex:(NSInteger)index;
 - (Class)collectionViewCellClassOfPageView:(WCPageView *)pageView;
 - (NSInteger)numberOfItemsInPageView:(WCPageView *)pageView;
