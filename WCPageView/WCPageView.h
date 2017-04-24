@@ -51,6 +51,8 @@ typedef NS_ENUM(NSUInteger, WCPageViewCurrentPageIndexChangePosition) {
 
 @property (nonatomic, nullable, readonly) UICollectionViewCell *currentDisplayingCell;
 
+@property (nonatomic, readonly) Class registerClass;
+
 - (void)setPageIndex:(NSInteger)index animated:(BOOL)animated;
 
 - (void)reloadData;

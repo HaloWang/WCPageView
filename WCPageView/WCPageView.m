@@ -32,6 +32,10 @@ NSInteger const InfiniteNumberOfItems = 1000;
     return cells.count > 0 ? cells.firstObject : nil;
 }
 
+- (Class)registerClass {
+    return [self.dataSource collectionViewCellClassOfPageView:self];
+}
+
 #pragma mark Init & Deinit
 
 + (WCPageView *)pageViewWithFrame:(CGRect)frame dataSource:(id<WCPageViewDataSource>)dataSource {

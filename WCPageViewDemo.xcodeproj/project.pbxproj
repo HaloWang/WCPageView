@@ -13,6 +13,8 @@
 		09BAFD4D1CB9808E00E770CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BAFD4B1CB9808E00E770CF /* Main.storyboard */; };
 		09BAFD4F1CB9808E00E770CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09BAFD4E1CB9808E00E770CF /* Assets.xcassets */; };
 		09BAFD521CB9808E00E770CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09BAFD501CB9808E00E770CF /* LaunchScreen.storyboard */; };
+		09D0859B1E7A6DB80092847D /* UsageListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D0859A1E7A6DB80092847D /* UsageListVC.m */; };
+		09D0859E1E7A70730092847D /* CarouselVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D0859D1E7A70730092847D /* CarouselVC.m */; };
 		9AC120E14C045050928EE3DC /* libPods-WCPageViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 570F844A63B8BB3148D30082 /* libPods-WCPageViewDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,10 @@
 		09BAFD4E1CB9808E00E770CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09BAFD511CB9808E00E770CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09BAFD531CB9808E00E770CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D085991E7A6DB80092847D /* UsageListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsageListVC.h; sourceTree = "<group>"; };
+		09D0859A1E7A6DB80092847D /* UsageListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsageListVC.m; sourceTree = "<group>"; };
+		09D0859C1E7A70730092847D /* CarouselVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselVC.h; sourceTree = "<group>"; };
+		09D0859D1E7A70730092847D /* CarouselVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselVC.m; sourceTree = "<group>"; };
 		570F844A63B8BB3148D30082 /* libPods-WCPageViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WCPageViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8948CBCB1614200398C8E924 /* Pods-WCPageViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCPageViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WCPageViewDemo/Pods-WCPageViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B82432437F5634D7A00A0C56 /* Pods-WCPageViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WCPageViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WCPageViewDemo/Pods-WCPageViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +73,10 @@
 			children = (
 				09BAFD451CB9808E00E770CF /* AppDelegate.h */,
 				09BAFD461CB9808E00E770CF /* AppDelegate.m */,
+				09D085991E7A6DB80092847D /* UsageListVC.h */,
+				09D0859A1E7A6DB80092847D /* UsageListVC.m */,
+				09D0859C1E7A70730092847D /* CarouselVC.h */,
+				09D0859D1E7A70730092847D /* CarouselVC.m */,
 				09BAFD481CB9808E00E770CF /* ViewController.h */,
 				09BAFD491CB9808E00E770CF /* ViewController.m */,
 				09BAFD4B1CB9808E00E770CF /* Main.storyboard */,
@@ -132,7 +142,7 @@
 		09BAFD371CB9808E00E770CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "王策";
 				TargetAttributes = {
 					09BAFD3E1CB9808E00E770CF = {
@@ -225,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D0859E1E7A70730092847D /* CarouselVC.m in Sources */,
 				09BAFD4A1CB9808E00E770CF /* ViewController.m in Sources */,
 				09BAFD471CB9808E00E770CF /* AppDelegate.m in Sources */,
+				09D0859B1E7A6DB80092847D /* UsageListVC.m in Sources */,
 				09BAFD441CB9808E00E770CF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,8 +279,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -311,8 +325,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

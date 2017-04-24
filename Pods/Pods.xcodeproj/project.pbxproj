@@ -8,23 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		0441713D161A6698BDA0B1DDAB447C11 /* WCPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B256D62528951AB4206337CE4E374DF9 /* WCPageView.m */; };
+		0CC360FC2F400F8C3C20C6028A1D3840 /* FangYuanObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EFD51801C64C236A70E8A9C105CC61 /* FangYuanObjC-dummy.m */; };
 		0FEC0D908E01989F1764BE0A2B681F5E /* Pods-WCPageViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A93FBDB7AEF2734DE33EF7C9A30353 /* Pods-WCPageViewDemo-dummy.m */; };
+		1485FDDF47E77158236E0373E1B4D3A4 /* FYConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F9AC4CE0B8610F92A7782B7ACBE18D11 /* FYConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1773D0F5FB6D66906A1B20D7EF115391 /* WCPageView.h in Headers */ = {isa = PBXBuildFile; fileRef = DBAD5F10F4E716DCD164283CE3569680 /* WCPageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2152C0E43BBB3585C680A5E332B690AA /* UIView+FangYuanPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91FE18CEC0EEBB829EDA3CA773BA0D /* UIView+FangYuanPrivate.m */; };
+		261BDA3B4DFD9F477B423BB68D436DF1 /* UIView+FangYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = A05289A6138B74B2451147DF295E4864 /* UIView+FangYuan.m */; };
 		28452E4724C212024ECFC34AF72CF20B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		2FCA26ABB52A0D3D36D5413DF0CEDCA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		3214423CD407BDB6F665E6F2E2BCE77A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		42D273D7DC58D284AE71EE23B2C7DAF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		46CB9E858E04F29EB41F8AF33B6FF526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		4785FD7B2CD28CE46FEFFFF17B75C297 /* HaloObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = A7165A2F254C4154F11F19F6E0DDA78B /* HaloObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		658F6464040F929F35D1C940261582EB /* UIView+FangYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 022EA2005EAA6EB9C3FB029CB058C653 /* UIView+FangYuan.m */; };
+		35279F29DE328755C34C701B6CA154E0 /* FYConstraintManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C79D6E469F46B634C8F85AB295C972 /* FYConstraintManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AA91DA309128B727F3F5A7044BA4CB2 /* UIView+FangYuanPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 666E22305A8236C67094A068025B4FE5 /* UIView+FangYuanPrivate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4785FD7B2CD28CE46FEFFFF17B75C297 /* HaloObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = C1DA301EF4291874C05F61FE1B525679 /* HaloObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		689EF94B80B865F115B18DE81042D309 /* FYRuler.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E73B4D292366D8547DCF7EF8FCD718 /* FYRuler.m */; };
+		6C726CCF6824E98D7DC6EAB0CB92DF08 /* FYConstraintHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 98CEB1FED8335DF1876D5E662271C900 /* FYConstraintHolder.m */; };
+		6C8BF5BCE25563F1830515098CD221DD /* FYConstraintHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F529AA0ABC64DC179CFF89BD8B3C162 /* FYConstraintHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E87C88FD2279C5054197444A56A2535 /* WCPageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1684E2DF530A429D7FDD0D404F2D17FC /* WCPageView-dummy.m */; };
-		7495B91E665A91E3FCBCED3DC2E4EC0C /* FangYuanObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B6F3A9E73CB99E4736927056E21387 /* FangYuanObjC-dummy.m */; };
-		AC7E5479C9AB3ABF4F48FD5EA159E87C /* HaloObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A55EA08A2DAEB7C380A256DA0DE4F75 /* HaloObjC.m */; };
-		CABFF470659427ABF4EA8957A3688140 /* UIView+FangYuan.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DE7035B4FA165C1963554B25BE1FAF4 /* UIView+FangYuan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86E2863ACE4D8725DF5C7C20CC0B6F90 /* FYRuler.h in Headers */ = {isa = PBXBuildFile; fileRef = B44613A981059C65ACC5F1DF2679EAEA /* FYRuler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		879119E14B18DA119C1D4A9E14F1705E /* FYConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6534383055F6F4C0F9F955710091B2FF /* FYConstraint.m */; };
+		91B14EA4B84E0D34927909578D4B9533 /* FYConstraintManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0154253861DF0578AE4D1605AD33727B /* FYConstraintManager.m */; };
+		A97F8EF54948A97623BF788DB78FEE12 /* FYHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D43A0E11835AA654BC5D661C714A71A /* FYHolder.m */; };
+		AC7E5479C9AB3ABF4F48FD5EA159E87C /* HaloObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEE11BDC6C4414BBAC2E74ECDC9B1BD2 /* HaloObjC.m */; };
+		AD7F6AB791BAA51BD57A22362F085067 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		BCE0300E2BB1543D85CA158C31DAEAB0 /* FYHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = A5D766FF80E23C8855AFDAD2144C09C1 /* FYHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA990FDFCB2C7B025A28041E6D5942E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		DC34850B38D1F71A590267016A441021 /* HaloObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D10FDAB877250303D63CA329F15F33 /* HaloObjC-dummy.m */; };
+		DC34850B38D1F71A590267016A441021 /* HaloObjC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272ABBFB4E25075F6E46AFD459E5FB17 /* HaloObjC-dummy.m */; };
 		EB21ACC3675C06B54BDBD59ACBCAE108 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		F2805EB79B654B485B1B55741E0A887B /* FangYuan.m in Sources */ = {isa = PBXBuildFile; fileRef = E7991C532F25D511F104C93742E8D146 /* FangYuan.m */; };
-		FFAA76201626E54BC57AE7776D6B52F5 /* FangYuan.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B8CA1A2CF06B2403461E7EA874A13D8 /* FangYuan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4949C0B5E169BFE6AEE7A986FDBBB85 /* UIView+FangYuan.h in Headers */ = {isa = PBXBuildFile; fileRef = A535C6C2EB586901D76675FE13E2FFAB /* UIView+FangYuan.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +42,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 517CF975EC349DC7154CAE4BC49C604D;
+			remoteGlobalIDString = 2D62A0829D7515D61912026FA9E856F7;
 			remoteInfo = FangYuanObjC;
 		};
 		4CCE66CCD179FE5412CAE35429DC99C4 /* PBXContainerItemProxy */ = {
@@ -52,37 +62,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		022EA2005EAA6EB9C3FB029CB058C653 /* UIView+FangYuan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FangYuan.m"; path = "FangYuanObjC/UIView+FangYuan.m"; sourceTree = "<group>"; };
-		08008FA084ECAF76B9D6C500CC9E2197 /* HaloObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HaloObjC-prefix.pch"; sourceTree = "<group>"; };
+		0154253861DF0578AE4D1605AD33727B /* FYConstraintManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FYConstraintManager.m; path = FangYuanObjC/FYConstraintManager.m; sourceTree = "<group>"; };
 		0CFD7CEC439EAC3D8B44D4150FB8DAEC /* Pods-WCPageViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WCPageViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		0D58D862549BCC641CD7D2B693F46040 /* Pods-WCPageViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCPageViewDemo-frameworks.sh"; sourceTree = "<group>"; };
 		0E90B5791F085A2183CA5BF73E4A04E6 /* Pods-WCPageViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCPageViewDemo.release.xcconfig"; sourceTree = "<group>"; };
-		14B6F3A9E73CB99E4736927056E21387 /* FangYuanObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FangYuanObjC-dummy.m"; sourceTree = "<group>"; };
 		1684E2DF530A429D7FDD0D404F2D17FC /* WCPageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCPageView-dummy.m"; sourceTree = "<group>"; };
-		1B8CA1A2CF06B2403461E7EA874A13D8 /* FangYuan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FangYuan.h; path = FangYuanObjC/FangYuan.h; sourceTree = "<group>"; };
+		19995A85F53818392AA7B04C0BE78FC4 /* HaloObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HaloObjC-prefix.pch"; sourceTree = "<group>"; };
+		1D43A0E11835AA654BC5D661C714A71A /* FYHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FYHolder.m; path = FangYuanObjC/FYHolder.m; sourceTree = "<group>"; };
+		1F91FE18CEC0EEBB829EDA3CA773BA0D /* UIView+FangYuanPrivate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FangYuanPrivate.m"; path = "FangYuanObjC/UIView+FangYuanPrivate.m"; sourceTree = "<group>"; };
+		272ABBFB4E25075F6E46AFD459E5FB17 /* HaloObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HaloObjC-dummy.m"; sourceTree = "<group>"; };
 		2A4581CCABBE70C07F13EB8F3FE9D8AF /* libWCPageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWCPageView.a; path = libWCPageView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED72893C7669E8AE3B89F6217C0ECDE /* WCPageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCPageView-prefix.pch"; sourceTree = "<group>"; };
+		33137054F6DBAD4789C82CF408E8C695 /* HaloObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HaloObjC.xcconfig; sourceTree = "<group>"; };
+		34EFD51801C64C236A70E8A9C105CC61 /* FangYuanObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FangYuanObjC-dummy.m"; sourceTree = "<group>"; };
+		3760ED91F5F70218B73E0645137F2DA0 /* FangYuanObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FangYuanObjC.xcconfig; sourceTree = "<group>"; };
+		37E73B4D292366D8547DCF7EF8FCD718 /* FYRuler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FYRuler.m; path = FangYuanObjC/FYRuler.m; sourceTree = "<group>"; };
 		3D96FB6558948260E37462C2434F7438 /* WCPageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCPageView.xcconfig; sourceTree = "<group>"; };
+		3F529AA0ABC64DC179CFF89BD8B3C162 /* FYConstraintHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FYConstraintHolder.h; path = FangYuanObjC/FYConstraintHolder.h; sourceTree = "<group>"; };
 		4458C602D248D58C11F0BB5C3E88CDFB /* libPods-WCPageViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WCPageViewDemo.a"; path = "libPods-WCPageViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51D10FDAB877250303D63CA329F15F33 /* HaloObjC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HaloObjC-dummy.m"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6A55EA08A2DAEB7C380A256DA0DE4F75 /* HaloObjC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HaloObjC.m; path = HaloObjC/HaloObjC.m; sourceTree = "<group>"; };
-		758C39D394B4432DF4CD8FCCDDD51F14 /* FangYuanObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FangYuanObjC-prefix.pch"; sourceTree = "<group>"; };
+		6534383055F6F4C0F9F955710091B2FF /* FYConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FYConstraint.m; path = FangYuanObjC/FYConstraint.m; sourceTree = "<group>"; };
+		666E22305A8236C67094A068025B4FE5 /* UIView+FangYuanPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FangYuanPrivate.h"; path = "FangYuanObjC/UIView+FangYuanPrivate.h"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		80B7AC642FD2DC36518F0F408A799C59 /* FangYuanObjC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FangYuanObjC-prefix.pch"; sourceTree = "<group>"; };
 		8AD305903103EBAF28AECD420741CA7D /* libHaloObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHaloObjC.a; path = libHaloObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DE7035B4FA165C1963554B25BE1FAF4 /* UIView+FangYuan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FangYuan.h"; path = "FangYuanObjC/UIView+FangYuan.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98CEB1FED8335DF1876D5E662271C900 /* FYConstraintHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FYConstraintHolder.m; path = FangYuanObjC/FYConstraintHolder.m; sourceTree = "<group>"; };
 		9C673D710B5A844017694B7DC689EC94 /* libFangYuanObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFangYuanObjC.a; path = libFangYuanObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7165A2F254C4154F11F19F6E0DDA78B /* HaloObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HaloObjC.h; path = HaloObjC/HaloObjC.h; sourceTree = "<group>"; };
+		A05289A6138B74B2451147DF295E4864 /* UIView+FangYuan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FangYuan.m"; path = "FangYuanObjC/UIView+FangYuan.m"; sourceTree = "<group>"; };
+		A535C6C2EB586901D76675FE13E2FFAB /* UIView+FangYuan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FangYuan.h"; path = "FangYuanObjC/UIView+FangYuan.h"; sourceTree = "<group>"; };
+		A5D766FF80E23C8855AFDAD2144C09C1 /* FYHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FYHolder.h; path = FangYuanObjC/FYHolder.h; sourceTree = "<group>"; };
+		A6C79D6E469F46B634C8F85AB295C972 /* FYConstraintManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FYConstraintManager.h; path = FangYuanObjC/FYConstraintManager.h; sourceTree = "<group>"; };
 		A7A93FBDB7AEF2734DE33EF7C9A30353 /* Pods-WCPageViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WCPageViewDemo-dummy.m"; sourceTree = "<group>"; };
-		A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HaloObjC.xcconfig; sourceTree = "<group>"; };
 		B256D62528951AB4206337CE4E374DF9 /* WCPageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WCPageView.m; sourceTree = "<group>"; };
-		C402FFBFF7CAC5BA17B0B6BB1960F5A7 /* FangYuanObjC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FangYuanObjC.xcconfig; sourceTree = "<group>"; };
+		B44613A981059C65ACC5F1DF2679EAEA /* FYRuler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FYRuler.h; path = FangYuanObjC/FYRuler.h; sourceTree = "<group>"; };
+		C1DA301EF4291874C05F61FE1B525679 /* HaloObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HaloObjC.h; path = HaloObjC/HaloObjC.h; sourceTree = "<group>"; };
 		C70470C0CC52F4EC45F1AD4050D695D9 /* Pods-WCPageViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WCPageViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DBAD5F10F4E716DCD164283CE3569680 /* WCPageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WCPageView.h; sourceTree = "<group>"; };
 		DBAE24BF2048675BBC8BDDA29411259D /* Pods-WCPageViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WCPageViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E7991C532F25D511F104C93742E8D146 /* FangYuan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FangYuan.m; path = FangYuanObjC/FangYuan.m; sourceTree = "<group>"; };
 		E7A968C005DDC14C42080A44E5C5EB72 /* Pods-WCPageViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WCPageViewDemo-resources.sh"; sourceTree = "<group>"; };
+		F9AC4CE0B8610F92A7782B7ACBE18D11 /* FYConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FYConstraint.h; path = FangYuanObjC/FYConstraint.h; sourceTree = "<group>"; };
+		FEE11BDC6C4414BBAC2E74ECDC9B1BD2 /* HaloObjC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HaloObjC.m; path = HaloObjC/HaloObjC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,20 +114,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BDAE3C02FD015B0656E5321B1729160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FCA26ABB52A0D3D36D5413DF0CEDCA2 /* Foundation.framework in Frameworks */,
+				AD7F6AB791BAA51BD57A22362F085067 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47F228E08BFD0E2F50BBD1FBAA0904AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				28452E4724C212024ECFC34AF72CF20B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D6389D690FBD8B7F24BBA41DF5942EC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46CB9E858E04F29EB41F8AF33B6FF526 /* Foundation.framework in Frameworks */,
-				42D273D7DC58D284AE71EE23B2C7DAF1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,13 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1DFDC8CCE2F407B9E335C30F00322618 /* Pods */ = {
+		01913C1F8B63A95C795F5E46C720E794 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9A7CB39D729B1251BEE360FAC7B54157 /* FangYuanObjC */,
-				9BF1B401E0E8EE7188C94CC538BB12D5 /* HaloObjC */,
+				33137054F6DBAD4789C82CF408E8C695 /* HaloObjC.xcconfig */,
+				272ABBFB4E25075F6E46AFD459E5FB17 /* HaloObjC-dummy.m */,
+				19995A85F53818392AA7B04C0BE78FC4 /* HaloObjC-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/HaloObjC";
 			sourceTree = "<group>";
 		};
 		26F2E14F258ADD0AD9695290EF456C60 /* WCPageView */ = {
@@ -166,6 +188,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		3E9B70CE8E2F4E06370F54722ECAF04F /* FangYuanObjC */ = {
+			isa = PBXGroup;
+			children = (
+				F9AC4CE0B8610F92A7782B7ACBE18D11 /* FYConstraint.h */,
+				6534383055F6F4C0F9F955710091B2FF /* FYConstraint.m */,
+				3F529AA0ABC64DC179CFF89BD8B3C162 /* FYConstraintHolder.h */,
+				98CEB1FED8335DF1876D5E662271C900 /* FYConstraintHolder.m */,
+				A6C79D6E469F46B634C8F85AB295C972 /* FYConstraintManager.h */,
+				0154253861DF0578AE4D1605AD33727B /* FYConstraintManager.m */,
+				A5D766FF80E23C8855AFDAD2144C09C1 /* FYHolder.h */,
+				1D43A0E11835AA654BC5D661C714A71A /* FYHolder.m */,
+				B44613A981059C65ACC5F1DF2679EAEA /* FYRuler.h */,
+				37E73B4D292366D8547DCF7EF8FCD718 /* FYRuler.m */,
+				A535C6C2EB586901D76675FE13E2FFAB /* UIView+FangYuan.h */,
+				A05289A6138B74B2451147DF295E4864 /* UIView+FangYuan.m */,
+				666E22305A8236C67094A068025B4FE5 /* UIView+FangYuanPrivate.h */,
+				1F91FE18CEC0EEBB829EDA3CA773BA0D /* UIView+FangYuanPrivate.m */,
+				67AE0A80C838E95225DCF5240084B9D3 /* Support Files */,
+			);
+			name = FangYuanObjC;
+			path = FangYuanObjC;
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,62 +238,38 @@
 			path = "../Pods/Target Support Files/WCPageView";
 			sourceTree = "<group>";
 		};
+		65BBCBB71DDEC3F0EE6F6377B8868891 /* HaloObjC */ = {
+			isa = PBXGroup;
+			children = (
+				C1DA301EF4291874C05F61FE1B525679 /* HaloObjC.h */,
+				FEE11BDC6C4414BBAC2E74ECDC9B1BD2 /* HaloObjC.m */,
+				01913C1F8B63A95C795F5E46C720E794 /* Support Files */,
+			);
+			name = HaloObjC;
+			path = HaloObjC;
+			sourceTree = "<group>";
+		};
+		67AE0A80C838E95225DCF5240084B9D3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3760ED91F5F70218B73E0645137F2DA0 /* FangYuanObjC.xcconfig */,
+				34EFD51801C64C236A70E8A9C105CC61 /* FangYuanObjC-dummy.m */,
+				80B7AC642FD2DC36518F0F408A799C59 /* FangYuanObjC-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FangYuanObjC";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				5AB82B850656A8DAAA015F437D7F374A /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				1DFDC8CCE2F407B9E335C30F00322618 /* Pods */,
+				EC2F7F7FA26593B36BAA8383D49265B9 /* Pods */,
 				AEC727E18DFEA5BBB33B30FED8892FF5 /* Products */,
 				3C8E879571A796A7FDBEF2916E03DCFC /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8C6DCF49640DEB6E1C44AC0C9F9A5C79 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C402FFBFF7CAC5BA17B0B6BB1960F5A7 /* FangYuanObjC.xcconfig */,
-				14B6F3A9E73CB99E4736927056E21387 /* FangYuanObjC-dummy.m */,
-				758C39D394B4432DF4CD8FCCDDD51F14 /* FangYuanObjC-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FangYuanObjC";
-			sourceTree = "<group>";
-		};
-		9A7CB39D729B1251BEE360FAC7B54157 /* FangYuanObjC */ = {
-			isa = PBXGroup;
-			children = (
-				1B8CA1A2CF06B2403461E7EA874A13D8 /* FangYuan.h */,
-				E7991C532F25D511F104C93742E8D146 /* FangYuan.m */,
-				8DE7035B4FA165C1963554B25BE1FAF4 /* UIView+FangYuan.h */,
-				022EA2005EAA6EB9C3FB029CB058C653 /* UIView+FangYuan.m */,
-				8C6DCF49640DEB6E1C44AC0C9F9A5C79 /* Support Files */,
-			);
-			name = FangYuanObjC;
-			path = FangYuanObjC;
-			sourceTree = "<group>";
-		};
-		9BF1B401E0E8EE7188C94CC538BB12D5 /* HaloObjC */ = {
-			isa = PBXGroup;
-			children = (
-				A7165A2F254C4154F11F19F6E0DDA78B /* HaloObjC.h */,
-				6A55EA08A2DAEB7C380A256DA0DE4F75 /* HaloObjC.m */,
-				A509A55F9CA590E1CE32F13123693062 /* Support Files */,
-			);
-			name = HaloObjC;
-			path = HaloObjC;
-			sourceTree = "<group>";
-		};
-		A509A55F9CA590E1CE32F13123693062 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */,
-				51D10FDAB877250303D63CA329F15F33 /* HaloObjC-dummy.m */,
-				08008FA084ECAF76B9D6C500CC9E2197 /* HaloObjC-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/HaloObjC";
 			sourceTree = "<group>";
 		};
 		AEC727E18DFEA5BBB33B30FED8892FF5 /* Products */ = {
@@ -271,15 +292,29 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EC2F7F7FA26593B36BAA8383D49265B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E9B70CE8E2F4E06370F54722ECAF04F /* FangYuanObjC */,
+				65BBCBB71DDEC3F0EE6F6377B8868891 /* HaloObjC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C456FFD6B5431F49F4A1CC0E10D7C47A /* Headers */ = {
+		7F763281AE0D5B292CF272665AFE5BB5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFAA76201626E54BC57AE7776D6B52F5 /* FangYuan.h in Headers */,
-				CABFF470659427ABF4EA8957A3688140 /* UIView+FangYuan.h in Headers */,
+				1485FDDF47E77158236E0373E1B4D3A4 /* FYConstraint.h in Headers */,
+				6C8BF5BCE25563F1830515098CD221DD /* FYConstraintHolder.h in Headers */,
+				35279F29DE328755C34C701B6CA154E0 /* FYConstraintManager.h in Headers */,
+				BCE0300E2BB1543D85CA158C31DAEAB0 /* FYHolder.h in Headers */,
+				86E2863ACE4D8725DF5C7C20CC0B6F90 /* FYRuler.h in Headers */,
+				F4949C0B5E169BFE6AEE7A986FDBBB85 /* UIView+FangYuan.h in Headers */,
+				3AA91DA309128B727F3F5A7044BA4CB2 /* UIView+FangYuanPrivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,13 +337,13 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		517CF975EC349DC7154CAE4BC49C604D /* FangYuanObjC */ = {
+		2D62A0829D7515D61912026FA9E856F7 /* FangYuanObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3E4D5F47A43ED116EAA6F7784A3D49BD /* Build configuration list for PBXNativeTarget "FangYuanObjC" */;
+			buildConfigurationList = E1A19AFB3E316DABCD03332A00265705 /* Build configuration list for PBXNativeTarget "FangYuanObjC" */;
 			buildPhases = (
-				A61489E3A864827C0121C2667D5E462A /* Sources */,
-				D6389D690FBD8B7F24BBA41DF5942EC6 /* Frameworks */,
-				C456FFD6B5431F49F4A1CC0E10D7C47A /* Headers */,
+				D99AEE261CEBBDE2684A2C124E1682CD /* Sources */,
+				3BDAE3C02FD015B0656E5321B1729160 /* Frameworks */,
+				7F763281AE0D5B292CF272665AFE5BB5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -393,7 +428,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				517CF975EC349DC7154CAE4BC49C604D /* FangYuanObjC */,
+				2D62A0829D7515D61912026FA9E856F7 /* FangYuanObjC */,
 				B402934AE2DA78E1CD92CC1CB42A00B7 /* HaloObjC */,
 				77C6707C858FA4BEBD77B419980D27A1 /* Pods-WCPageViewDemo */,
 				60007F4E50320581CECD12BAAEB9866A /* WCPageView */,
@@ -419,13 +454,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A61489E3A864827C0121C2667D5E462A /* Sources */ = {
+		D99AEE261CEBBDE2684A2C124E1682CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2805EB79B654B485B1B55741E0A887B /* FangYuan.m in Sources */,
-				7495B91E665A91E3FCBCED3DC2E4EC0C /* FangYuanObjC-dummy.m in Sources */,
-				658F6464040F929F35D1C940261582EB /* UIView+FangYuan.m in Sources */,
+				0CC360FC2F400F8C3C20C6028A1D3840 /* FangYuanObjC-dummy.m in Sources */,
+				879119E14B18DA119C1D4A9E14F1705E /* FYConstraint.m in Sources */,
+				6C726CCF6824E98D7DC6EAB0CB92DF08 /* FYConstraintHolder.m in Sources */,
+				91B14EA4B84E0D34927909578D4B9533 /* FYConstraintManager.m in Sources */,
+				A97F8EF54948A97623BF788DB78FEE12 /* FYHolder.m in Sources */,
+				689EF94B80B865F115B18DE81042D309 /* FYRuler.m in Sources */,
+				261BDA3B4DFD9F477B423BB68D436DF1 /* UIView+FangYuan.m in Sources */,
+				2152C0E43BBB3585C680A5E332B690AA /* UIView+FangYuanPrivate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +490,7 @@
 		1FB34CE6568387F28A9964488D2CD003 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FangYuanObjC;
-			target = 517CF975EC349DC7154CAE4BC49C604D /* FangYuanObjC */;
+			target = 2D62A0829D7515D61912026FA9E856F7 /* FangYuanObjC */;
 			targetProxy = 1D01BE97F561D77BE6EAD17A2A889A6D /* PBXContainerItemProxy */;
 		};
 		630502C9BE0B541590A0F8C4ABD069B9 /* PBXTargetDependency */ = {
@@ -508,7 +548,7 @@
 		};
 		048DD34FA2A42BB86E1530AC6CFBB262 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */;
+			baseConfigurationReference = 33137054F6DBAD4789C82CF408E8C695 /* HaloObjC.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -517,29 +557,6 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/HaloObjC/HaloObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2BC180DD091AA69E259756976C5E894A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C402FFBFF7CAC5BA17B0B6BB1960F5A7 /* FangYuanObjC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FangYuanObjC/FangYuanObjC-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -594,7 +611,7 @@
 		};
 		59B6B7DE30E32816CF8A00282F13164C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7DBDCDD0C2D7EBB0588284D6AB81DA4 /* HaloObjC.xcconfig */;
+			baseConfigurationReference = 33137054F6DBAD4789C82CF408E8C695 /* HaloObjC.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -638,6 +655,52 @@
 			};
 			name = Debug;
 		};
+		689CADF8D154F8648C9B0113CB8C661D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3760ED91F5F70218B73E0645137F2DA0 /* FangYuanObjC.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FangYuanObjC/FangYuanObjC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7386BD994D0D18990FDD5A1863F580BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3760ED91F5F70218B73E0645137F2DA0 /* FangYuanObjC.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FangYuanObjC/FangYuanObjC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		76CD3D4C90A48DDEFF45B72EF0D2F784 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C70470C0CC52F4EC45F1AD4050D695D9 /* Pods-WCPageViewDemo.debug.xcconfig */;
@@ -656,29 +719,6 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		841EB43390738FFB89ECC4617E1816D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C402FFBFF7CAC5BA17B0B6BB1960F5A7 /* FangYuanObjC.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FangYuanObjC/FangYuanObjC-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -742,15 +782,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E4D5F47A43ED116EAA6F7784A3D49BD /* Build configuration list for PBXNativeTarget "FangYuanObjC" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				841EB43390738FFB89ECC4617E1816D0 /* Debug */,
-				2BC180DD091AA69E259756976C5E894A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B9AFEEB0A5325BBE9FD19A8FA4823B7D /* Build configuration list for PBXNativeTarget "HaloObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -774,6 +805,15 @@
 			buildConfigurations = (
 				6642CD3F538FD1D42C79C8593746390A /* Debug */,
 				F33FAC82A9B559C937EF1908CCD4ADFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1A19AFB3E316DABCD03332A00265705 /* Build configuration list for PBXNativeTarget "FangYuanObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				689CADF8D154F8648C9B0113CB8C661D /* Debug */,
+				7386BD994D0D18990FDD5A1863F580BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
